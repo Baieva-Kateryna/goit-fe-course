@@ -19,12 +19,10 @@ body {
   margin: 0 auto;
 }
 /* site navigation */
-.site-navigation {
-  list-style: none;
-}
-
 .navigation ul {
-  padding: 114px 164px 130px 164px;
+  padding: 77px 0;
+  margin: 0;
+  text-align: center;
 }
 
 .site-navigation li {
@@ -104,5 +102,5 @@ body {
   line-height: 24px;
   height: 62px;
   width: 164px;
-  background-color: #ffffff;
+  cursor: pointer;
 }

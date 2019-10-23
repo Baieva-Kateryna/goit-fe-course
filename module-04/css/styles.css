@@ -1,0 +1,32 @@
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+body {
+  width: 1110px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* menu section */
+.menu {
+  background: salmon;
+  padding-top: 38px;
+}
+
+.logo {
+  float: left;
+}
+
+.menu-list li,a {
+  float: right;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f0101;
+  text-decoration: none;
+  line-height: 11px;
+}
