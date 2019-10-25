@@ -11,6 +11,9 @@ html {
 body {
   font-family: "Playfair Display", serif;
   color: #626262;
+}
+
+header, main {
   font-size: 0;
 }
 
@@ -103,4 +106,5 @@ body {
   height: 62px;
   width: 164px;
   cursor: pointer;
+  background: none;
 }
