@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .clearfix::after {
   display: table;
   content: "";
@@ -30,11 +36,6 @@ body {
   color: #1abc9c;
 }
 
-.menu ul {
-  margin: 0;
-  padding: 0;
-}
-
 .menu li {
   float: right;
   list-style-type: none;
@@ -50,7 +51,7 @@ body {
   text-decoration: none;
   font-weight: 700;
   color: #0f0101;
-  font-style: 14px;
+  font-size: 14px;
 }
 
 .menu a:hover {
@@ -63,8 +64,6 @@ body {
 }
 
 .section-title h2 {
-  margin: 0;
-  padding: 0;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
@@ -83,13 +82,22 @@ body {
 }
 
 /* featured */
-.featured-products {
-  margin: 0;
-  padding: 0;
+.featured a:nth-child(2n-1) {
+  display: block;
+  width: 255px;
+  height: 282px;
+  float: left;
 }
+
+.featured a:nth-child(2n) {
+  display: block;
+  width: 200px;
+  height: 40px;
+  float: left;
+}
+
 .featured-products h3 {
   margin: 6px 0 0 14px;
-  padding: 0;
 }
 .featured-products li {
   width: 255px;
@@ -133,10 +141,6 @@ body {
   background-color: rgba(26, 188, 156, 0.44);
 }
 /* blog */
-.blog {
-  margin: 0;
-  padding: 0;
-}
 .article {
   width: 351px;
   list-style-type: none;
@@ -151,7 +155,6 @@ body {
 }
 .article h4 {
   margin: 0 0 28px 0;
-  padding: 0;
   font-weight: 600;
   font-size: 18px;
   line-height: 26px;
@@ -167,14 +170,13 @@ body {
 }
 .article p {
   margin: 0 0 14px;
-  padding: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
   color: #555252;
 }
 .article button {
-  font-weight: 300px;
+  font-weight: 300;
   color: #ffffff;
   font-size: 16px;
   line-height: 26px;
