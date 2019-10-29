@@ -11,14 +11,21 @@
 }
 
 body {
-  width: 1110px;
-  margin: 0 auto;
   font-family: "Open Sans", sans-serif;
   color: #555252;
 }
 
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
 /* menu section */
-.logo a {
+.navigation {
+  padding: 42px 0;
+}
+.logo {
+  display: block;
   float: left;
   text-transform: uppercase;
   text-decoration: none;
@@ -26,23 +33,26 @@ body {
   font-weight: 300;
   font-size: 30px;
   line-height: 32px;
+  color: #555252;
 }
 
-.menu-section {
-  padding-top: 36px;
-}
-.logo a::first-letter {
+.logo::first-letter {
   font-weight: 900;
   color: #1abc9c;
 }
-
-.menu li {
+.menu {
   float: right;
-  list-style-type: none;
-  margin-right: 30px;
+  width: 468px;
 }
 
-.menu li:first-child {
+.menu li {
+  float: left;
+  list-style-type: none;
+  margin-right: 30px;
+  line-height: 32px;
+}
+
+.menu li:last-child {
   margin-right: 0;
 }
 
@@ -82,25 +92,14 @@ body {
 }
 
 /* featured */
-.featured a:nth-child(2n-1) {
-  display: block;
+.image {
   width: 255px;
   height: 282px;
-  float: left;
-}
-
-.featured a:nth-child(2n) {
   display: block;
-  width: 200px;
-  height: 40px;
-  float: left;
+  background-color: #e9f0fd;
 }
 
-.featured-products h3 {
-  margin: 6px 0 0 14px;
-}
 .featured-products li {
-  width: 255px;
   float: left;
   list-style-type: none;
   margin-right: 30px;
@@ -109,37 +108,40 @@ body {
 .featured-products li:nth-child(4n) {
   margin-right: 0px;
 }
-.background {
+
+.product a, .price {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 40px;
+  }
+
+.product a{
+  width: 186px;
   float: left;
-  background-color: #e9f0fd;
-}
-.product {
-  float: left;
-  width: 200px;
-  height: 40px;
-  background-color: rgba(50, 50, 50, 1);
 }
 .price {
   float: left;
   width: 55px;
-  height: 40px;
-  background-color: rgba(50, 50, 50, 0.44);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.44);
 }
-.price h3,
-.product h3 {
-  text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 32px;
-}
-.featured:hover .product {
+.product {
+  padding-left: 14px;
+  background-color: rgba(50, 50, 50, 1);
+  }
+
+  .featured:hover .product {
   background-color: rgba(26, 188, 156, 1);
 }
 .featured:hover .price {
-  background-color: rgba(26, 188, 156, 0.44);
+  background-color: rgba(255, 255, 255, 0.44);
 }
+
+
 /* blog */
 .article {
   width: 351px;
@@ -175,16 +177,17 @@ body {
   line-height: 26px;
   color: #555252;
 }
-.article button {
+
+.brd {
+  display: block;
+  background-color: #4ec6ab;
+  border-radius: 3px;
+  text-decoration: none;
   font-weight: 300;
   color: #ffffff;
   font-size: 16px;
-  line-height: 26px;
-  height: 51px;
-  width: 159px;
-  cursor: pointer;
-  background-color: #4ec6ab;
-  border-radius: 3px;
-  border: 0px;
+  width: 160px;
+  text-align: center;
+  line-height: 52px;
   margin-bottom: 82px;
 }
