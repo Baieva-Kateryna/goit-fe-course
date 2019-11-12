@@ -300,8 +300,12 @@
   color: #333333;
   line-height: 17px;
 }
+.footer-a {
+text-decoration: none;
+transition: color 200ms linear;
+}
 
-.footer-span {
+.footer-a:hover {
   color: #f38181;
 }
 form {
@@ -319,6 +323,10 @@ form input {
   padding-left: 12px;
   color: #cccccc;
   border-right: none;
+}
+
+form input:focus {
+  color: #000000;
 }
 
 form button {
