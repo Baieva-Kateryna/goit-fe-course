@@ -108,7 +108,6 @@
 /* section-title */
 .section-title {
   display: flex;
-  /* margin-top: 110px; */
   justify-content: center;
   text-align: center;
 }
@@ -194,20 +193,17 @@
 
 /* contact-us */
 .title-contact {
-  position: relative;
   color: #ffffff;
 }
 
 .contact-us {
-  background-color: #222222;
   padding: 100px 0;
+  background-color: #222222;
+  background-image: url(../img/map.png);
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
-.img {
-  position: absolute;
-  right: 0;
-  opacity: 0.3;
-}
 /* form */
 .form {
   margin-top: 78px;
