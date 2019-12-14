@@ -1,5 +1,17 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
 
+body {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #999999;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+}
+
 .container {
   position: relative;
   max-width: 1200px;
@@ -72,7 +84,6 @@
   margin: 0 auto;
   width: 68.42%;
   font-size: 150px;
-  font-family: "Montserrat", sans-serif;
   color: rgb(255, 255, 255);
   font-weight: 700;
   text-transform: uppercase;
@@ -81,8 +92,6 @@
 
 .header-content__button {
   margin-top: 124px;
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
   color: rgb(255, 255, 255);
   font-weight: 700;
   text-transform: uppercase;
@@ -123,7 +132,6 @@
 
 .nav__logo {
   font-size: 30px;
-  font-family: "Montserrat", sans-serif;
   color: #ffffff;
   font-weight: 700;
   line-height: 36px;
@@ -131,12 +139,8 @@
 }
 
 .nav__link {
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
   color: #ffffff;
-  font-weight: 400;
   line-height: 17px;
-  text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: color 200ms linear;
   -o-transition: color 200ms linear;
@@ -195,7 +199,6 @@
 }
 
 .section__subtitle {
-  font-family: "Montserrat", sans-serif;
   color: #333333;
   font-size: 30px;
   text-transform: uppercase;
@@ -240,14 +243,12 @@
 }
 
 .service__heading {
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
   color: #333333;
   text-transform: uppercase;
   line-height: 17px;
 }
 
-.service__item-clock h3::before {
+.service__item--clock h3::before {
   content: "";
   display: block;
   background: url("../img/icons/clock.svg") no-repeat;
@@ -258,7 +259,7 @@
   transform: translateX(-63px) translateY(100%);
 }
 
-.service__item-line h3::before {
+.service__item--line h3::before {
   content: "";
   display: block;
   background: url("../img/icons/line.svg") no-repeat;
@@ -269,7 +270,7 @@
   transform: translateX(-63px) translateY(100%);
 }
 
-.service__item-computer h3::before {
+.service__item--computer h3::before {
   content: "";
   display: block;
   background: url("../img/icons/computer.svg") no-repeat;
@@ -280,7 +281,7 @@
   transform: translateX(-63px) translateY(100%);
 }
 
-.service__item-book h3::before {
+.service__item--book h3::before {
   content: "";
   display: block;
   background: url("../img/icons/book.svg") no-repeat;
@@ -291,7 +292,7 @@
   transform: translateX(-63px) translateY(100%);
 }
 
-.service__item-home h3::before {
+.service__item--home h3::before {
   content: "";
   display: block;
   background: url("../img/icons/home.svg") no-repeat;
@@ -302,7 +303,7 @@
   transform: translateX(-63px) translateY(100%);
 }
 
-.service__item-image h3::before {
+.service__item--image h3::before {
   content: "";
   display: block;
   background: url("../img/icons/image.svg") no-repeat;
@@ -455,11 +456,12 @@
 }
 
 .team-photo__name {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   text-align: center;
   margin-top: 30px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  color: rgb(51, 51, 51);
+  color: #333333;
   text-transform: uppercase;
   line-height: 17px;
 }
@@ -492,8 +494,6 @@
 }
 
 .footer__text {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
   color: #333333;
   line-height: 17px;
 }
@@ -534,9 +534,7 @@ form button {
   border: none;
   width: 150px;
   height: 40px;
-  font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 14px;
   color: #ffffff;
   text-transform: uppercase;
   line-height: 17px;
